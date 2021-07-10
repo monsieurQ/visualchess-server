@@ -10,6 +10,10 @@ app.listen(process.env.PORT || 3000, () => {
 	console.log("Running!");
 }); 
 
+app.get('/', (req, res) => {
+	res.send("It's working!");
+});
+
 
 app.get('/game', (req, res) => {
 	console.log(req.query);
