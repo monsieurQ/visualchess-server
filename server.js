@@ -6,7 +6,7 @@ const fetch = require('node-fetch');
 const app = express(); 
 
 app.use(cors());
-app.listen(3001, () => {
+app.listen(process.env.PORT || 3000, () => {
 	console.log("Running!");
 }); 
 
